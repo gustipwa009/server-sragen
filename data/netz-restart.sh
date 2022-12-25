@@ -38,11 +38,11 @@ echo -e ""
 echo -e "======================================"
 echo -e ""
 echo -e ""
-echo -e "    [1] Restart All Services"
+echo -e "    [1] Restart Stunnel4"
 echo -e "    [2] Restart Xray"
 echo -e "    [3] Restart Nginx"
 echo -e "    [4] Restart Dropbear"
-echo -e "    [5] Restart Stunnel4"
+echo -e "    [5] Restart All Services"
 echo -e "    [x] Exit"
 echo -e ""
 read -p "    Select From Options [1-5 or x] :  " Restart
@@ -52,6 +52,7 @@ sleep 1
 clear
 case $Restart in
 clear
+5)
 systemctl restart xray
 systemctl restart nginx
 systemctl restart dropbear
@@ -65,6 +66,7 @@ echo -e ""
 echo -e "======================================"
 exit
 clear
+2)
 systemctl restart xray
 echo -e ""
 echo -e "======================================"
@@ -74,6 +76,7 @@ echo -e ""
 echo -e "======================================"
 exit
 clear
+3)
 systemctl restart nginx
 echo -e ""
 echo -e "======================================"
@@ -83,6 +86,7 @@ echo -e ""
 echo -e "======================================"
 exit
 clear
+4)
 systemctl restart dropbear
 echo -e ""
 echo -e "======================================"
@@ -92,6 +96,7 @@ echo -e ""
 echo -e "======================================"
 exit
 clear
+1)
 systemctl restart stunnel4
 echo -e ""
 echo -e "======================================"
@@ -101,5 +106,4 @@ echo -e ""
 echo -e "======================================"
 exit
 exit
-echo  "Pilih nomor perintah"
 esac
