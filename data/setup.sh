@@ -1583,7 +1583,7 @@ wget -q -O cek-trojan "${source}/cek-trojan.sh"
 wget -q -O cek-vless "${source}/cek-vless.sh"
 wget -q -O cek-vmess "${source}/cek-vmess.sh"
 # Tools
-wget -q -O menu "${source}/menu.sh"
+wget -q -O xmenu "${source}/xmenu.sh"
 wget -q -O welcome "${source}/welcome.sh"
 wget -q -O exp "${source}/exp.sh"
 wget -q -O clear-log "${source}/clear-log.sh"
@@ -1632,7 +1632,7 @@ chmod +x cek-trojan
 chmod +x cek-vless
 chmod +x cek-vmess
 # Tools
-chmod +x menu
+chmod +x xmenu
 chmod +x welcome
 chmod +x exp
 chmod +x clear-log
